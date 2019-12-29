@@ -1,1 +1,1 @@
-# Pokemon_GAN
+# **PokémonGAN**
