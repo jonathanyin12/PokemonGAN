@@ -1,4 +1,4 @@
-# **PokéGAN**
+# **PokémonGAN**
 A generative adversarial network that creates new Pokémon from a random noise vector.
 
 ### Generated samples:
