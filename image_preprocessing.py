@@ -7,7 +7,7 @@ processing_dataset_dir = 'processing_dataset'
 white_background_dir = processing_dataset_dir + '/white_background'
 flip_dir = processing_dataset_dir + '/flip'
 rotate_dir = processing_dataset_dir + '/rotate'
-combined_dir = 'processed_dataset'
+combined_dir = 'training_dataset'
 
 
 if not os.path.exists(white_background_dir):
