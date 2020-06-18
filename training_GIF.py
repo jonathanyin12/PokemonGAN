@@ -1,19 +1,13 @@
+import os
 import imageio
 
-
-filenames = []
-for i in range(228):
-    if i % 5 == 0:
-        filenames.append('Generated Images/epoch{}.png'.format(i))
-
+directory = 'training_samples'
 images = []
-for filename in filenames:
-    images.append(imageio.imread(filename))
 
-times = []
-
-for epoch in range(45):
-    times.append(0.5)
+for epoch in range(1000):
+    if epoch % 5 == 0:
+        images.append(imageio.imread(os.path.join(directory, 'Epoch{}.png'.format(epoch))))
 
 
-imageio.mimsave('training_progress1.gif', images, duration=times)
+gif_name = 'training_progress_1.gif'
+imageio.mimsave(gif_name, images, duration=[0.2 for i in images])
