@@ -61,7 +61,7 @@ for each in os.listdir(white_background_dir):
 for each in os.listdir(white_background_dir):
     img = Image.open(white_background_dir + '/' + each, 'r')
     img.load()
-    for deg in range(2, 12, 2):
+    for deg in range(5, 20, 5):
         rotated_ccwr = rotate_image(img, deg)
         rotated_ccwr.save(rotate_dir + '/' + each[:-4] + '_ccwr{}.jpg'.format(deg), 'JPEG', quality=100)
 
@@ -72,7 +72,7 @@ for each in os.listdir(white_background_dir):
 for each in os.listdir(flip_dir):
     img = Image.open(flip_dir + '/' + each, 'r')
     img.load()
-    for deg in range(2, 12, 2):
+    for deg in range(5, 20, 5):
         rotated_ccwr = rotate_image(img, deg)
         rotated_ccwr.save(rotate_dir + '/' + each[:-4] + '_ccwr{}.jpg'.format(deg), 'JPEG', quality=100)
 
